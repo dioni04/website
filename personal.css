@@ -1,0 +1,74 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+  flex-direction: column;
+  margin: 0;
+  font-size: 22px;
+  color: #D8FAFE;
+  background-color: #3c2f52;
+  line-height: 120%;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.centered-content{
+  z-index: 2;
+  background-color: #1f1723;
+  padding: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ascii-background {
+  position: relative; /* Positioning for stacking context */
+}
+
+.ascii-art{
+  z-index: 1; /* Keeps it behind the content */
+  text-align: center;
+  left: 100px;
+  position: absolute; 
+  color: rgba(255, 255, 255, 0.15); /* Light color for visibility */
+  white-space: pre; 
+  
+}
+
+.header{
+  color: #f79c88;
+}
+
+.nav-style ul li {
+  display: inline-block;         
+  margin: 0 15px;              
+}
+
+.accents{
+  color: #f5464c;
+}
+
+.social {
+  color: #3ec54b;
+}
+
+ul {
+  list-style-type: none;          
+  padding: 0;                     
+  margin: 0;                      
+}
+
+a{
+  text-decoration: none;
+}
+
+a:link{
+  color: #4995f3;
+}
+
+a:visited{
+  color: #d86830;
+}
