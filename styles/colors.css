@@ -1,0 +1,91 @@
+:root{
+    --bg-color: linear-gradient(165deg, rgba(255,255,255,1) 45%, rgba(255,221,164,1) 100%);
+    --text-color: #38405fff;
+    --nav-bg: rgba(255, 255, 255, 0);
+    --nav-color: #000000;
+    --link-color: #4995f3;
+    --visited-color: #4995f3;
+    --hover-color: #ccb011;
+    --accent-color: #eb9486ff;
+    --dropdown-bg : rgba(255, 255, 255, 0.575);
+    --dropdown-color: black;
+    --border-color: #363636;
+    --footer-color: #9999998a;
+    --footer-link-color: #333333;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --nav-bg: #33333300;
+    --nav-color: #ffffff;
+    --link-color: #4995f3;
+    --visited-color: #4995f3;
+    --hover-color: #555555;
+    --accent-color: #eb9486ff;
+    --dropdown-bg: #2a2a2a;
+    --dropdown-color: #ffffff;
+    --border-color: #cccccc;
+    --footer-color: #555555;
+}
+
+body {
+    transition: filter 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+    color: var(--text-color);
+    background: var(--bg-color);
+    margin: 0px;
+}
+
+.header-color {
+    background-color: var(--nav-bg);
+}
+
+a{
+    text-decoration: none;
+}
+  
+a:link{
+    color: var(--link-color);
+}
+  
+a:visited{
+    color: var(--visited-color);
+}
+  
+a:hover{
+    color: var(--hover-color)
+}
+
+.accents {
+    color: var(--accent-color);
+    font-size: xx-large;
+}
+  
+.social {
+    color: #3ec54b;
+}
+
+.nav-style a {
+    color: var(--nav-color);
+    text-decoration: none;
+}
+  
+.nav-style a:hover {
+    color: #838383;
+}
+
+.button-switch {
+    border: 0px;
+    background-color: #00000000;
+    cursor: pointer;
+    user-select: none;
+}
+
+.invert-icon{
+    filter: invert(1);
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+    background-color: #ffdea4a4;
+}

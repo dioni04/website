@@ -1,0 +1,31 @@
+/* Header styles */
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* Distributes elements (left, center, right) */
+    align-items: center;
+}
+
+/* Navigation */
+.nav-style ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Makes the list horizontal */
+}
+
+.nav-style ul li {
+    margin: 0 15px;
+}
+
+.nav-style-current {
+    text-decoration: underline;
+}
+
+/* Pushes dropdown to the right */
+.header-end {
+    margin-left: auto;
+}
+

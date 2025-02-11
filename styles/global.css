@@ -1,43 +1,49 @@
 html {
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: fit-content;
     flex-direction: column;
-    margin: 0;
-    font-size: 22px;
-    color: #D8FAFE;
-    background-color: #3c2f52;
+    font-size: 25px;
     line-height: 120%;
-}  
+}
+
+.playfair {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+.inter {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
 
 .press-start-2p-regular {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-a{
-    text-decoration: none;
-}
-  
-a:link{
-    color: #4995f3;
-}
-  
-a:visited{
-    color: #d86830;
-}
-  
-a:hover{
-    color: #3ec54b;
-}
 
 ul {
-    list-style-type: none;          
-    padding: 0;                     
-    margin: 0;                      
-  }
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 @font-face {
     font-family: 'IBMLogoFont';
@@ -46,7 +52,7 @@ ul {
     font-style: normal;
 }
 
-.logo-text{
+.logo-text {
     font-family: 'IBMLogoFont';
     font-size: 100px;
 }

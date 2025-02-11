@@ -1,0 +1,12 @@
+.footer-box{
+    background-color: var(--footer-color);
+    font-size: medium;
+}
+
+.footer-box a{
+    color: var(--footer-link-color);
+}
+
+.footer-box img{
+    max-height: 1em;
+}

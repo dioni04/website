@@ -1,13 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Select all accordion buttons
     const accordionHearders = document.querySelectorAll('.accordion-header');
     accordionHearders.forEach(header => {
         header.addEventListener('click', () => {
-            // Toggle the 'active' class on the accordion container
             const accordion = header.parentElement;
             accordion.classList.toggle('active');
 
-            // Get the content panel following the button
             const content = button.nextElementSibling;
 
             if (accordion.classList.contains('active')) {
