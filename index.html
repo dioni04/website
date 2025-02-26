@@ -14,6 +14,8 @@
     <link href="./styles/footer.css" rel="stylesheet" />
     <link rel="icon" href="images/favicon.png" /> <!-- Site Icon -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="./styles/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/justifiedGallery.min.css" />
 
     <!--
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,10 +43,8 @@
     <header class="header-color">
         <nav class="nav-style">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="nav-style-current"><a href="aboutEN.html">About</a></li>
-                <li><a href="drawings.html">Drawings</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="drawings.html">Hobbies</a></li>
             </ul>
         </nav>
 
@@ -61,7 +61,7 @@
             </div>
         </div>
     </header>
-    <div class="">
+    <div class="wrapper">
         <h1 class="header">About me</h1>
         <br>
         <!--<img src="./images/b896a664ee5debf3272a672a34f4add6.jpg" alt="Ed" width="25%" height="25%" title="me irl fr" />-->
@@ -72,13 +72,11 @@
                 About Me <div class="arrow">v</div>
             </div>
             <div class="accordion-content">
-                <p class="accents"> Personal Description:
-                <ul>
-                    <li>Brazilian CS Bachelor</li>
-                    <li>Computer Tinkerer</li>
-                    <li>Hobbyst Artist</li>
-                    <li>Amateur Dancer</li>
-                </ul>
+                <p class="text-desc"> Hi! My name is Dioni, I'm a 20yo brazilian computer science student, dancer and digital artist. <br>
+                    I made this website for a personal place to put whatever i feel that is cool to share ;) <br>
+                    I have some experience in backend development and Q&A. <br>
+                    I'm currently studying postgreSQL and C++ <br>
+                    I'm also focusing on improving my skills in my creative hobbies <br>
                 </p>
             </div>
         </div>
@@ -88,49 +86,55 @@
                 Interests <span class="arrow">v</span>
             </div>
             <div class="accordion-content">
-                <p class="accents">Areas of Interest
-                <ul>
-                    <li>Front-End Development</li>
-                    <li>Game Development</li>
-                    <li>Computer Graphics</li>
-                    <li>Operational Systems</li>
-                    <li>Reverse Engineering</li>
-                    <li>Emulation</li>
-                </ul>
-                </p>
+                <div class="accordion-list">
+                    <p class="accents">Tech Interests
+                    <ul class="accordion-list">
+                        <li>Data Analytics</li>
+                        <li>Game Development</li>
+                        <li>Computer Graphics</li>
+                        <li>OSes</li>
+                        <li>Reverse Engineering</li>
+                        <li>Emulation</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="accordion-list">
+                    <p class="accents">Non-Tech Interests
+                    <ul>
+                        <li>Digital Art</li>
+                        <li>Digital Design</li>
+                        <li>Urban Dances (locking, hip-hop)</li>
+                        <li>Gaming</li>
+                    </ul>
+                    </p>
+                </div>
+
             </div>
         </div>
         <br>
-        <div class="slide-wrapper">
-            <div class="slider">
-                <div class="page">
-                    <ul>
-                        <li>C</li>
-                        <li>Pascal</li>
-                        <li>Python</li>
-                        <li>Haskell</li>
-                        <li>Java</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Microsoft Office</li>
-                        <li>Excel</li>
-                        <li>Linux</li>
-                        <li>Photoshop</li>
-                        <li>Clip Studio Paint</li>
-                    </ul>
-                </div>
-                <div class="page">
-                    <ul>
-                        <li>Digital Art</li>
-                        <li>Urban Dances</li>
-                        <li>Photo Editing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <p class="hobbies accents">Hobbies</p>
+        <p class="accents">Skills & Tools</p>
+        <div class="grid-container icons"> 
+            <div class="grid-box"><img src="./images/icons/c-original.svg" alt=""> C Language</div>
+            <div class="grid-box"><img src="./images/icons/cplusplus-original.svg" alt=""> C++ Language</div>
+            <div class="grid-box"><img src="./images/icons/java-original.svg" alt=""> Java</div>
+            <div class="grid-box"><img src="./images/icons/python-original.svg" alt=""> Python</div>
+            <div class="grid-box"><img src="./images/icons/haskell-original.svg" alt=""> Haskell</div>
+            <div class="grid-box"><img src="./images/icons/fpc.png" alt=""> Pascal</div>
+            <div class="grid-box"><img src="./images/icons/postgresql-original.svg" alt=""> PostgreSQL</div>
+            <div class="grid-box"><img src="./images/icons/html5-original.svg" alt=""> HTML</div>
+            <div class="grid-box"><img src="./images/icons/css3-original.svg" alt=""> CSS</div>
+            <div class="grid-box"><img src="./images/icons/windows11-original.svg" alt=""> Microsoft Office</div>
+            <div class="grid-box"><img src="./images/icons/linux-original.svg" alt=""> Linux</div>
+            <div class="grid-box"><img src="./images/icons/fedora-original.svg" alt=""> Fedora</div>
+            <div class="grid-box"><img src="./images/icons/opensuse-original.svg" alt=""> OpenSUSE</div>
+            <div class="grid-box"><img src="./images/icons/photoshop-original.svg" alt=""> Photoshop</div>
+            <div class="grid-box"><img src="./images/icons/csp.png" alt=""> Clip Studio Paint</div>
+          </div>
+    </div>
     </div>
     <footer class="footer-box">
+        Socials
         <ul>
             <li><img src="./images/icons/google.svg" alt=""> joaozangari21@gmail.com</li>
             <li><a href="https://github.com/dioni04"> <img src="./images/icons/github.svg" alt=""> GitHub</a></li>
@@ -143,10 +147,17 @@
             <li><a href="https://steamcommunity.com/profiles/76561198800773356/"> <img
                         src="./images/icons/steam-logo.png" alt=""> Steam</a></li>
         </ul>
+        <hr>
+        <div class="centered-content">This site is built with vanilla HTML+CSS+JS</div>
+        <div class="centered-content"><a href="https://catppuccin.com/"> Catpuccin Palette</a></div>
     </footer>
+    <div class="accents-bar" data-astro-cid-mrkpgsjx=""></div>
+
 
     <script src="./scripts/accordion.js"></script>
     <script src="./scripts/darkmode.js"></script>
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    <script src="./scripts/jquery.justifiedGallery.min.js"></script>
 </body>
 
 </html>

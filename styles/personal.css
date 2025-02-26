@@ -1,5 +1,9 @@
+hr {
+    border-top: 2px solid var(--pink);
+}
+
 .wrapper {
-    position: relative;
+    padding: 0.75em;
 }
 
 .centered-content-background {
@@ -28,7 +32,7 @@
     pointer-events: none;
 }
 
-.grid {
+.img-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     gap: 10px;
@@ -45,4 +49,13 @@
     justify-content: flex-end;
     gap: 10px;
     padding: 2.5px;
+}
+
+.icons img{
+    max-width: 1.15em;
+    transform: translateY(0.15em);
+}
+
+.text-desc {
+    padding: 1em;
 }

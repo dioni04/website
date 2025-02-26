@@ -1,49 +1,167 @@
+<!doctype html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="A personal website for learning HTML and CSS made by a CS undergrad" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Dioni's Personal Website</title>
-        <link href="./styles/global.css" rel="stylesheet"/>
-        <link href="./styles/personal.css" rel="stylesheet" />
-        <link rel="icon" href="images/favicon.png" /> <!-- Site Icon -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A personal website for learning HTML and CSS made by a CS undergrad" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dioni's Personal Website</title>
+    <link href="./styles/colors.css" rel="stylesheet" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link href="./styles/personal.css" rel="stylesheet" />
+    <link href="./styles/animations.css" rel="stylesheet" />
+    <link href="./styles/header.css" rel="stylesheet" />
+    <link href="./styles/footer.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png" /> <!-- Site Icon -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="./styles/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/justifiedGallery.min.css" />
+
+    <!--
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-    </head>
+        -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
 
-    <header class="">
-        <nav class='nav-style'>
+
+
+<!-- Esse eh o corpo e tem as listas e os links do site -->
+
+<body class="inter">
+    <header class="header-color">
+        <nav class="nav-style">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="drawings.html">Drawings</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="drawings.html">Hobbies</a></li>
             </ul>
         </nav>
-    </header>
 
-    <body class="playfair">
-        <div class="">
-            <p>
-                Some drawings that i made
-            </p>
-            <div class="grid">
-                <img src="./images/drawings/howl.png" alt="7">
-                <img src="./images/drawings/alt2.png" alt="2">
-                <img src="./images/drawings/Shadowheart.png" alt="13">
-                <img src="./images/drawings/unknown.png" alt="14">
-                <img src="./images/drawings/ladyColor.png" alt="10">
-                <img src="./images/drawings/cyno.png" alt="4">
-                <img src="./images/drawings/furina.png" alt="6">
-                <img src="./images/drawings/juri.png" alt="8">
-                <img src="./images/drawings/lucy.png" alt="11">
-                <img src="./images/drawings/kaz.png" alt="9">
-                <img src="./images/drawings/PINT2.png" alt="12">
-                <img src="./images/drawings/albedo2.png" alt="1">
-                <img src="./images/drawings/yor2.png" alt="15">
-                <img src="./images/drawings/zartreus.png" alt="16">
-                <img src="./images/drawings/eren2.png" alt="5">
-                <img src="./images/drawings/ashleycolor.png" alt="3">
+        <div class="header-end">
+            <button id='dark-mode-button' class="button-switch"><img id="icon-switcher"
+                    src="./images/dark-theme.svg"></button>
+            <div class="dropdown">
+                <button class="dropbtn">Language</button>
+                <div class="dropdown-content">
+                    <a href="aboutEN.html">English</a>
+                    <a href="aboutPT.html">Português</a>
+                    <a href="aboutFR.html">Français</a>
+                </div>
             </div>
         </div>
-    </body>
+    </header>
+    <div class="wrapper">
+        <h1 class="accents">Digital Art</h1>
+        <p>
+            These are some pieces that I made <br>
+            I use Clip Studio Paint and Krita<br>
+            I've been drawing on and off since 2021 <br>
+            I started off with traditional art but now I do digital pretty much exclusively <br>
+            As you can probably tell I mainly draw humanoid characters
+        </p>
+        <div id="gallery">
+            <a href="./images/drawings/howl.png" data-lightbox="pieces">
+                <img src="./images/drawings/howl.png" alt="howl">
+            </a>
+            <a href="./images/drawings/alt2.png" data-lightbox="pieces">
+                <img src="./images/drawings/alt2.png" alt="sara">
+            </a>
+            <a href="./images/drawings/Shadowheart.png" data-lightbox="pieces">
+                <img src="./images/drawings/Shadowheart.png" alt="shadowheart">
+            </a>
+            <a href="./images/drawings/unknown.png" data-lightbox="pieces">
+                <img src="./images/drawings/unknown.png" alt="jane">
+            </a>
+            <a href="./images/drawings/ladyColor.png" data-lightbox="pieces">
+                <img src="./images/drawings/ladyColor.png" alt="lady">
+            </a>
+            <a href="./images/drawings/cyno.png" data-lightbox="pieces">
+                <img src="./images/drawings/cyno.png" alt="cyno">
+            </a>
+            <a href="./images/drawings/furina.png" data-lightbox="pieces">
+                <img src="./images/drawings/furina.png" alt="furina">
+            </a>
+            <a href="./images/drawings/juri.png" data-lightbox="pieces">
+                <img src="./images/drawings/juri.png" alt="juri">
+            </a>
+            <a href="./images/drawings/lucy.png" data-lightbox="pieces">
+                <img src="./images/drawings/lucy.png" alt="lucy">
+            </a>
+            <a href="./images/drawings/kaz.png" data-lightbox="pieces">
+                <img src="./images/drawings/kaz.png" alt="kazuha">
+            </a>
+            <a href="./images/drawings/PINT2.png" data-lightbox="pieces">
+                <img src="./images/drawings/PINT2.png" alt="ren">
+            </a>
+            <a href="./images/drawings/albedo2.png" data-lightbox="pieces">
+                <img src="./images/drawings/albedo2.png" alt="albedo">
+            </a>
+            <a href="./images/drawings/yor2.png" data-lightbox="pieces">
+                <img src="./images/drawings/yor2.png" alt="yor">
+            </a>
+            <a href="./images/drawings/zartreus.png" data-lightbox="pieces">
+                <img src="./images/drawings/zartreus.png" alt="zatreus">
+            </a>
+            <a href="./images/drawings/eren2.png" data-lightbox="pieces">
+                <img src="./images/drawings/eren2.png" alt="eren">
+            </a>
+            <a href="./images/drawings/ashleycolor.png" data-lightbox="pieces">
+                <img src="./images/drawings/ashleycolor.png" alt="ashley">
+            </a>
+        </div>
+        <h1 class="accents">Dance</h1>
+        <p>I've been dancing as a hooby since 2022 with no prior experience with it<br>
+            I focus mainly on hip-hop (locking & popping) and k-pop <br>
+            I've also danced vogue and jazz-funk for a while</p>
+        <h1 class="accents">Gaming</h1>
+        <p>I've been gaming since I was 2 <br>
+            I started with a <a href="https://bootleggames.fandom.com/wiki/Category:Consoles">bootleg all-in-one
+                console</a>, unfortunately I don't remember which one ;(<br>
+            When I turned 4, my parents gifted me a totally legal PS2 <br>
+            Later on I went to a Xbox 360, then a PS4 and finally got into PC Gaming which is the main platform I use
+            nowadays <br>
+            My favorite games are (do note that my opinion is the only correct one)</p>
+        <h1 class="accents">Language Learning</h1>
+        <p>I speak 3 languages. Portuguese, English and French<br>
+            In the future I plan on learning Mandarin and Spanish as well</p>
+        <h1 class="accents">Photography</h1>
+        <p>I really like taking pictures of places I visit <br>
+            I still only use my phone cam for it but I'm planning on getting a dedicated amateur camera in the future</p>
+    </div>
+    <footer class="footer-box">
+        Socials
+        <ul>
+            <li><img src="./images/icons/google.svg" alt=""> joaozangari21@gmail.com</li>
+            <li><a href="https://github.com/dioni04"> <img src="./images/icons/github.svg" alt=""> GitHub</a></li>
+            <li><a href="https://www.instagram.com/joaozangari/"> <img src="./images/icons/instagram.svg" alt="">
+                    Instagram</a></li>
+            <li><a href="https://twitter.com/joao_zangari"> <img src="./images/icons/twitter.svg" alt=""> Twitter</a>
+            </li>
+            <li><a href="https://open.spotify.com/user/joaoeduardoza04"> <img src="./images/icons/spotify.svg" alt="">
+                    Spotify</a></li>
+            <li><a href="https://steamcommunity.com/profiles/76561198800773356/"> <img
+                        src="./images/icons/steam-logo.png" alt=""> Steam</a></li>
+        </ul>
+        <hr>
+        <div class="centered-content">This site is built with vanilla HTML+CSS+JS</div>
+        <div class="centered-content"><a href="https://catppuccin.com/"> Catpuccin Palette</a></div>
+    </footer>
+    <div class="accents-bar" data-astro-cid-mrkpgsjx=""></div>
+
+
+    <script src="./scripts/accordion.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    <script src="./scripts/jquery.justifiedGallery.min.js"></script>
+    <script>$("#gallery").justifiedGallery({
+        rowHeight : 225,
+        lastRow: 'center',
+        margins: 5
+    });</script>
+</body>
